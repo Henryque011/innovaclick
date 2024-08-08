@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap');
+
+/* Cores
+Azul: #3A5D8C 
+Cinza:#A6A6A6
+Laranja1: #F28705
+Laranja2:#F27405
+Preto: #0D0D0D
+/* Geral */
+/* 
+Fontes
+font-family:"lobster", sans-serif
+font-family: "anton", sans-serif
+*/
+.site {
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+hr {
+    width: 80px;
+    height: 4px;
+    background: black;
+    border: none;
+}
+
+h2 {
+    line-height: 70px;
+    font-size: 35pt;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    /* deixa a letra em negrito*/
+    font-family: "lobster", sans-serif
+}
+
+h3 {
+    font-size: 25pt;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: "lobster", sans-serif
+}
+
+h4 {
+    font-size: 20pt;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: "lobster", sans-serif
+}
+
+/* Específico */
+header {
+    width: 100%;
+    background-color: #3A5D8C65;
+}
+
+header .site {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    /*1 valor (superior e inferior) 2 valor (esquerda e direita)*/
+
+}
+
+header h1 {
+    width: 172px;
+    height: 100px;
+    background: url(../img/logo.png);
+    background-size: 100% 100%;
+    text-indent: -9999px;
+    margin: 5px 0;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    font-size: 20pt;
+    font-family: "anton", sans-serif;
+    padding: 10px;
+    background-color: none;
+    margin: 10px;
+
+    border-radius: 10px 5px 10px 5px;
+
+    text-transform: uppercase;
+    /* todas as letras MAIÚSCULAS*/
+}
+
+header ul li.active {
+    border-bottom: #F27405 solid 2px;
+    border-right: #F27405 solid 2px;
+
+}
+
+header ul li a {
+    color: #3A5D8C;
+}
+
+header ul li a:hover {
+    /*Quando passar o mouse em cima*/
+    color: #F27405;
+}
+header .abrirMenu,
+header .fecharMenu { 
+    display: none;  
+}
+header nav button:last-child {
+    display: none;
+}
+
+header button {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+header button i {
+    font-size: 50px;
+    color: #F27405;
+
+}
+
+header button i:hover {
+    color: #3A5D8C;
+    font-size: 40px;
+    cursor: pointer;
+    /* troca pela mão*/
+}
+
+.banner {
+    width: 100%;
+    height: 620px;
+    background: lightgreen;
+}
+.banner div {
+    height: 100%;
+}
+
+
+.banner img {
+    height: 100%;
+    width: 100%;
+}
+
+.banner h2 {
+    position: relative; /*Posição onde ficará, dentro do obj */
+    top: -60%; /*TOPO*/
+    line-height: 100px;
+    font-size: 50pt;
+    letter-spacing: 10px;
+    color: #3A5D8C;
+}
+.banner .slick-prev {
+    left: 25px;
+    z-index: 999; /* indexação de objeto */
+    font-size: 35pt;
+}
+.banner .slick-next{
+    right: 25px;
+    z-index: 999;
+}
+.banner .slick-prev:before,
+.banner .slick-next:before {   
+    font-size: 35px;
+    line-height: 1;
+    opacity: .90;
+    color: #F27405;
+}
+.banner .slick-dots {
+    bottom: 25px;
+}
+.banner .slick-dots li button:before{
+    font-size: 12pt;
+    color:  #F27405;
+}
+
+
+
+/*inicio serviço*/
+.caixa:hover{
+    background-color:#3A5D8C10; /* c = numero dps das cores é opacodade*/
+    border-radius: 50px;
+}
+.servico {
+    padding: 40px 0;
+    
+}
+
+.servico .site {
+    margin: 40px auto;
+}
+
+.servico .conteudoServico {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servico .conteudoServico div {
+    width: 370px;
+    height: 580px;
+    margin: 5px;
+    border-radius: 25px;
+    box-shadow: 15px 10px 10px 5px #F27405;
+    background: lightgray;
+    
+    overflow: hidden; /* corta o texto dentro da div */
+}
+
+.servico img {
+    min-width: 100%;
+    min-height: 240px;
+    background: green;
+}
+
+.servico h3 {
+    font-size: 25pt;
+    text-align: center;
+    font-weight: bold;
+    text-transform: unset;
+    /*Tamanho da font minúscula*/
+    margin-top: 20px;
+    color: #51656e;
+}
+
+.servico p {
+    margin: 20px;
+    font-size: 15pt;
+    text-align: justify;
+}
+
+/* Inicio sobre*/
+.sobre {
+    height: 730px;
+}
+
+.sobre .site {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    /*alinhamento vertical*/
+}
+
+.sobre img {
+    width: 50%;
+    height: 100%;
+    background: grey;
+}
+
+.sobre p  {
+    margin: 50px;
+    font-size: 18pt;
+    line-height: 25px;
+    letter-spacing: 2px;
+    /*Espaçamento entre caracter*/
+    text-align: justify;
+    word-spacing: 0;
+    /* Espaçamento entre palavaras */
+}
+
+/* Inicio equipe*/
+
+.equipe {
+    padding: 40px 0;
+    height: 800px;
+    margin: 40px auto;
+
+}
+
+.equipe .site {
+
+    height: 100%;
+    margin: 40px auto;
+    text-transform: uppercase;
+    
+}
+
+.box {
+    background: #A6A6A6;
+    height: 1200px;
+    margin: auto;
+    text-align: center;
+    border-radius: 45px;
+}
+
+
+.box h2 hr {
+    margin: 40px auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+}
+
+.c1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+    flex-direction: column;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    
+}
+.caixas2{
+    display: flex;
+    flex-direction: column;
+}
+.caixa img {
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    background: rgb(102, 255, 0);
+    border-radius: 45px 10px 45px 10px;
+}
+
+.funcionarios {
+    margin: 40pt;
+    width: 200px;
+    height: 100px;
+    font-weight: bold;
+}
+
+/* inico do rodapé */
+
+footer {
+    background: #0D0D0D;
+    padding-top: 40px;
+    margin-top: 400px;
+}
+
+footer .site {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: x-large;
+}
+
+footer.div {
+    width: 50%;
+}
+
+footer img {
+    min-width: 60px;
+    min-height: 60px;
+    margin: 0 20px;
+    background: green;
+}
+
+footer .nav {
+    width: 50%;
+    display: flex;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12pt;
+    text-transform: uppercase;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 10pt;
+    background: transparent;
+    color: white;
+}
+.contato .site{
+    margin: 50px auto;
+}
+.contato form{
+    display: flex;
+    width: 100%;
+}
+.contato form div{
+    width: 50%;
+}
+.contato form label{
+    color: #F27405;
+    font-family: "anton", sans-serif;
+    font-size: 15pt;
+    line-height: 30pt;
+}
+.contato form input{
+    width: 90%;
+    font-family: "anton", sans-serif;
+    font-size: 12pt;
+    color: #3A5D8C;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.contato form textarea{
+    width: 110%;
+    font-family: "anton", sans-serif;
+    font-size: 12pt;
+    color: #3A5D8C;
+    height: 90px;
+    resize: none;
+    margin-bottom: 20px;
+}
+.contato form div div{
+    width: 112%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.contato form div div input{
+    background: #F27405c1;
+    border-bottom: 20px;
+    margin: 5px;
+    border-radius:0 30px;
+    width: 150px;
+    height: 50px;
+    border: #3A5D8C 1px solid;
+}
+
+
+/* -------------------------------------------------- */
+/* ---------------RESPONSIVIDADE 1024PX-------------- */
+/* -------------------------------------------------- */
+@media (max-width: 1024px) {
+    .banner{
+        height: 460px;
+    }    
+    .banner h2{
+        top: -67%
+    }
+    .servico{
+        padding: 20px 0;
+    }
+    .servico .conteudoServico{
+        margin: 30px;
+    }
+    .sobre {
+        height: 525px;
+        margin: 30px;
+    }
+    .equipe{
+        padding: 20px 0;
+        height: 750px;
+    }
+    .equipe .box {
+        height: 740px;
+        margin: 10px;
+    }
+    .equipe .funcionarios {
+        margin: 30px;
+    }
+    .equipe .funcionarios h3, h4 {
+        font-size: 15pt;
+    }
+    .equipe .caixa img {
+        width: 250px;
+        height: 150px;
+    }
+}
+
+/* -------------------------------------------------- */
+/* ---------------RESPONSIVIDADE 768PX-------------- */
+/* -------------------------------------------------- */
+@media (max-width: 768px){
+    .sobre p{
+        font-size: 13pt;
+        margin: 30px;
+    }
+    .caixa{
+        display:contents;
+        flex-direction: column;
+        align-items: center;
+    }
+    .equipe{
+        height: 900px;
+    }
+    .c1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .c1 .funcionarios{
+        display: contents;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .equipe .caixa img{
+        width: 200px;
+        height: 120px;
+    }
+        
+    .equipe .funcionarios{
+        margin: 0;
+    }
+    .equipe .funcionarios h3, h4 {
+        display: flex;
+        justify-content: center;
+        font-size: 10pt;
+    }
+    .equipe .box {
+        height: 900px;
+        margin: 10px;
+    }
+    .contato form{
+        flex-direction: column;
+    }
+    .contato form div{
+        width: 95%;
+        margin-left: 5px;
+    }
+    .contato form div div{
+        margin: 0;
+    }
+}
+/* -------------------------------------------------- */
+/* ---------------RESPONSIVIDADE 480PX-------------- */
+/* -------------------------------------------------- */
+@media (max-width: 480px){
+    h2{
+        font-size: 30pt;
+    }
+    header nav{
+        position: fixed;
+        background: #3A5D8C;
+        top: 0;
+        right: -250px;
+        height: 100%;
+        width: 180px; 
+        z-index: 9999;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: right 0.5s ease-out;
+    }
+    header .abrirMenu,
+    header .fecharMenu { 
+        display: block;  
+    }
+    .menuAtivo header nav{
+        right: 0;
+    }
+    header nav button:first-child{
+        margin-right: auto;
+    }
+    header nav ul {
+        flex-direction: column;
+    }
+    header nav ul li a {
+        color: #cfcfcf;
+    }
+    header button {
+        color: #cfcfcf;
+    }
+    
+    header .loginNormal,
+    .banner{
+        display: none;
+    }
+    .servico .conteudoServico{
+        flex-direction: column;
+    }
+    .servico .conteudoServico div{
+        width: 90%;
+        height: 480px;
+    }
+    .sobre{
+        height: auto;
+    }
+    .sobre .site{
+        flex-direction: column;
+    }
+    .sobre .site p{
+        font-size: 11pt;
+    }
+    .equipe .box{
+        height: 1210px;
+    }
+    .equipeimg{
+        width: 180px;
+        height: 120px;
+    } 
+
+    .equipe .c1{
+        width: 100%;
+        display: block;
+    }
+    .equipe .funcionarios h3{
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+    }   
+    footer .site{
+        margin: 2px 0 auto;
+    }
+    footer .site div{
+        width: 60%;
+    }
+    footer i{
+        border-radius: 20px 5px 20px 5px;
+    }
+    footer nav{
+        width: 40%;
+    }
+    footer ul{
+        flex-direction: column;
+        font-size: 12pt;
+    }
+    footer ul li{
+        margin: 0;
+    }    
+}
