@@ -1,3 +1,3 @@
-InnovaClick
+InnovaClick -
 Projeto aula a aula Senac São Miguel Paulista.
-Site desenvolvido em Hmtl, Css, Javascript com direcionamento de rotas em php
+Site desenvolvido com Hmtl, Css, Javascript com direcionamento de rotas em php
