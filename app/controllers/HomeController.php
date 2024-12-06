@@ -10,7 +10,7 @@ class HomeController extends Controller{
         $dados['nome'] = 'Henryque';
 
         //var_dump($dados);
-
+        // clen code
         $this->carregarViews('home',$dados);
         
 
